@@ -1,0 +1,30 @@
+- defaults:
+    link:
+      relink: true
+
+# - clean: ['~']
+
+- link:
+    ~/.bash_aliases: bash_aliases
+    ~/.gitconfig: gitconfig
+    ~/.screenrc: screenrc
+    ~/.editorconfig: editorconfig
+    ~/.gitignore: gitignore
+    ~/.gdbinit: gdbinit
+    ~/.gvimrc: gvimrc
+    ~/.vim: vim
+    ~/.vimrc: vimrc
+    ~/.curlrc: curlrc
+    ~/.gitattributes: gitattributes
+    ~/.wgetrc: wgetrc
+    ~/.dircolors: dircolors
+    ~/.pip: pip
+    ~/.condarc: condarc
+
+- create:
+    - ~/.vim/undo-history
+
+- shell:
+  - [ls, command testing]
+
+
